@@ -268,7 +268,7 @@ def load_model(model_path):
 @st.cache_data
 def load_104_input_data():
     try:
-        data_path = Path(__file__).parent / "model kepler df new with 104 inputs/df_new.csv"
+        data_path = Path(__file__).parent / "models and stream lit/model kepler df new with 104 inputs/df_new.csv"
         if data_path.exists():
             df = pd.read_csv(data_path)
             # Remove the target column (last column) for prediction
